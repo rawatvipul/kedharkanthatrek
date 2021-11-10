@@ -1,0 +1,213 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:26px;
+ 
+}
+/*Navigation Bar: Logo and Image */
+
+#logo{
+     margin:10px 34px;
+}
+#logo img{
+    height:70px;  
+    margin:3px 6px;
+    border-radius: 70px;
+    
+}
+/* Navigation Bar:List Styling */
+#navbar ul{
+    display:flex;
+} 
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute; 
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    /* color:white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction:column;
+    padding:3px 200px;
+    height:663px;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+#home::before{
+    content:"";
+    position:absolute;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXGioaZdZlLFgs8Gscx5yA5vT7fXMl3PkWiA&usqp=CAU')no-repeat center center/cover;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.79;   
+    border-radius: 100px;
+}
+#home h1{
+   color:black;
+   text-align: center;
+   font-size: 4rem;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* Services Center */
+#services{
+    margin: 34px;
+    display:flex;
+}
+#services .box{
+    border:3px solid black;
+    padding: 34px;
+    margin:5px;
+    border-radius: 50px;
+    background:skyblue;
+    text-align: center;
+
+    
+}
+#services .box img{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+   height:160px;
+   margin:auto;
+   border-image-outset: 10px;
+   display:block;
+}
+#services .box p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+
+/* client section */
+
+#client-section{
+        height:80%;
+        align-items: center;
+        font-size: large;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8p8csuBfdrt_6e5-EFtDeg0tVKhjuml85JQ&usqp=CAU')no-repeat center center/cover;
+    border-radius: 200px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:1;
+}
+#clients{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: white; */
+    height: 20rem;
+}
+.client-item{
+    padding:34px;
+}
+#clients img{
+    height:90px;
+    display;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.79;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBocB8DPM43QOGm_dupZwDdoYYWDRz3fb0ng&usqp=CAU')no-repeat center center/cover;
+    border-radius: 100px;
+}
+#contact-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 5rem;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width:40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer{
+    height: 30px;
+    background:black ;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility classes */
+.h-primary{
+    font-size:6.5rem;
+    padding:12px;
+} 
+.h-secondary{
+    font-size: 4.5rem;
+    padding:12px;
+} 
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:red;
+    color:white;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius:10px;
+    cursor:pointer;
+}
+.center{
+    text-align:center;
+}
